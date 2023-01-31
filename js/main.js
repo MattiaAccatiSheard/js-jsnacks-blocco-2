@@ -1,6 +1,6 @@
 //JSnack1
 //Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
-for (let i = 0; i < 1000 ; i++) {
+for (let i = 0; i < 10 ; i++) {
     //console.log(i);   
     if (i % 2 == 0) {
         console.log(i);        
@@ -14,14 +14,34 @@ let blu = document.getElementById('blu');
 let violet = document.getElementById('violet');
 
 for (let n = 0; n < 100; n++) {
-    if (n % 2 == 0) {        
-        blu.innerHTML += ` ${n}`;
+    if (n % 2 == 0) {
+        violet.innerHTML += `${n}`
+    } else {
+        blu.innerHTML += `${n}`
+    }
+
+}
+
+
+
+
+let red = document.getElementById('red');
+let green = document.getElementById('green');
+
+let redSpace = ' ';
+let greenSpace = ' ';
+
+for (let n = 0; n < 100; n++) {
+    if (n % 2 == 0) {
+        redSpace += `${n}`;
 
     } else {
-        violet.innerHTML += ` ${n}`;
+        greenSpace += `${n}`;
     }
-    
+
 }
+red.innerHTML = redSpace;
+green.innerHTML = greenSpace;
 
 
 
@@ -31,3 +51,18 @@ for (let n = 0; n < 100; n++) {
 
 //JSnack3
 //Crea un array di numeri interi e fai la somma di tutti gli elementi  che sono in posizione dispari
+let arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+let el = 0
+
+ 
+for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    if (i % 2 != 0) {
+       el += i += i;                
+    } else {
+
+    }
+    
+}
+
+console.log(el);
