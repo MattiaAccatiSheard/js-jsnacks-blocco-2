@@ -28,8 +28,8 @@ for (let n = 0; n < 100; n++) {
 let red = document.getElementById('red');
 let green = document.getElementById('green');
 
-let redSpace = ' ';
-let greenSpace = ' ';
+let redSpace = " ";
+let greenSpace = " ";
 
 for (let n = 0; n < 100; n++) {
     if (n % 2 == 0) {
@@ -51,18 +51,18 @@ green.innerHTML = greenSpace;
 
 //JSnack3
 //Crea un array di numeri interi e fai la somma di tutti gli elementi  che sono in posizione dispari
-let arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
-let el = 0
+let array = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+let somma = 0
 
- 
-for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    if (i % 2 != 0) {
-       el += i += i;                
+
+for (let i = 0; i < array.length; i++) {
+    let element = parseInt(array[i]);
+    if (element % 2 !== 0) {
+        somma += element;                
     } else {
 
     }
     
 }
 
-console.log(el);
+console.log(somma);
